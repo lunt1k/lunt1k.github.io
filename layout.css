@@ -43,8 +43,10 @@ header ul {
     .logo, nav span{
         display: flex;
     }
-    .
- }
+    .skills_logo > div{
+        flex: 0 0 50%;
+    }
+}
  
  @media all and (max-width: 480px) {
     .top-designer-name{
@@ -54,4 +56,3 @@ header ul {
         justify-content: center;
     }
  }
-}

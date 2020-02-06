@@ -12,84 +12,158 @@
 
 <body>
     <header>
-        <nav class="navigation container">
-            <span class="navbar-toggle" id="js-navbar-toggle">
-                <i class="fas fa-bars"></i>
-            </span>
-            <a href="#" class="logo">Menu</a>
-            <ul class="main-nav" id="js-menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About me</a></li>
-                <li><a href="#">Skills</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contacts</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-            <hr>
-        </nav>
+        <section class="scrollspy" id="header-nav">
+            <nav class="navigation container">
+                <span class="navbar-toggle" id="js-navbar-toggle">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <a href="#" class="logo">Menu</a>
+                <ul class="main-nav" id="js-menu">
+                    <li><a href="#header-nav" class="active">Home</a></li>
+                    <li><a href="#about-me">About me</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#team">Team</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <hr>
+            </nav>
+        </section>  
     </header>
-    <div class="container">
-        <div class="home">
-            <div class="top-designer-info">
-                <div class="top-designer-name">
-                    <h1>Denzel<br>Washington</h1>
-                </div>
-                <div class="top-designer-description">
-                    <p>UX | UI designer from Krakozia<br>30 years old</p>
-                </div>
-            </div>
-            <div class="home-img">
-                <img src="images/macphoto.png" alt="macphoto">
-            </div>
-        </div>
-    </div>
-    <div class="about_me">
-        <a href="" id="about_me"></a>
+    <section class="scrollspy" id="home-section">
         <div class="container">
-            <h2>About me</h2>
-            <p>Hi, I'm Denzel – UX/UI designer from Krakozia.<br>I'm interested in design and everything connected with
-                it.</p><br>
-            <p>I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</p><br>
-            <p>Ready to implement excellent projects<br>with wonderful people.</p>
+            <div class="home">
+                <div class="top-designer-info">
+                    <div class="top-designer-name">
+                        <h1>Denzel<br>Washington</h1>
+                    </div>
+                    <div class="top-designer-description">
+                        <p>UX | UI designer from Krakozia<br>30 years old</p>
+                    </div>
+                </div>
+                <div class="home-img">
+                    <img src="images/macphoto.png" alt="macphoto" id="macphoto">
+                </div>
+                <div id="myModal" class="modal">
+                    <span class="close">&times;</span>
+                    <img class="modal-content" id="img01">
+                    <div id="caption"></div>
+                </div>
+            </div>
         </div>
-    </div>
-    <div class="skills">
-		<a href="" id="skills"></a>
-		<div class="container">
-			<h2>Skills</h2>
-			<p id="skills_main_info">I work in such programs as</p>
-			<div class="skills_logo">
-				<div class="ap_logo">
-					<img src="images/ap_logo.png" alt="Adobe Photoshop">
-					<p>Adobe<br>Photoshop</p>
-					<div class="stars">
-						<img src="images/4_rate.png" alt="Rate">
-					</div>
-				</div>
-				<div class="ai_logo">
-					<img src="images/ai_logo.png" alt="Adobe Illustrator">
-					<p id="ai_text">Adobe<br>Illustrator</p>
-					<div class="stars">
-						<img src="images/3_rate.png" alt="Rate">
-					</div>
-				</div>
-				<div class="aaf_logo">
-					<img src="images/aaf_logo.png" alt="Adobe After Effects">
-					<p>Adobe<br>After Effects</p>
-					<div class="stars">
-						<img src="images/4_rate.png" alt="Rate">
-					</div>
-				</div>
-				<div class="figma_logo">
-					<img src="images/Figma_logo.png" alt="Figma" id="figma_logo">
-					<p>Figma<br><br></p>
-					<div class="stars">
-						<img src="images/4_rate.png" alt="Rate">
-					</div>
-				</div>
-			</div>
-		</div>
-	</div>
+    </section>
+    <section class="scrollspy" id="about-me">
+        <div class="about_me">
+            <div class="container">
+                <h2>About me</h2>
+                <p>Hi, I'm Denzel – UX/UI designer from Krakozia.<br>I'm interested in design and everything connected with
+                    it.</p><br>
+                <p>I'm studying at courses "Web and mobile design<br>interfaces" in IT-Academy.</p><br>
+                <p>Ready to implement excellent projects<br>with wonderful people.</p>
+            </div>
+        </div>
+    </section>
+    <section class="scrollspy" id="skills">
+        <div class="skills">
+            <div class="container">
+                <h2>Skills</h2>
+                <p id="skills_main_info">I work in such programs as</p>
+                <div class="skills_logo">
+                    <div class="ap_logo">
+                        <img src="images/ap_logo.png" alt="Adobe Photoshop">
+                        <p>Adobe<br>Photoshop</p>
+                        <div class="stars">
+                            <img src="images/4_rate.png" alt="Rate">
+                        </div>
+                    </div>
+                    <div class="ai_logo">
+                        <img src="images/ai_logo.png" alt="Adobe Illustrator">
+                        <p id="ai_text">Adobe<br>Illustrator</p>
+                        <div class="stars">
+                            <img src="images/3_rate.png" alt="Rate">
+                        </div>
+                    </div>
+                    <div class="aaf_logo">
+                        <img src="images/aaf_logo.png" alt="Adobe After Effects">
+                        <p>Adobe<br>After Effects</p>
+                        <div class="stars">
+                            <img src="images/4_rate.png" alt="Rate">
+                        </div>
+                    </div>
+                    <div class="figma_logo">
+                        <img src="images/Figma_logo.png" alt="Figma" id="figma_logo">
+                        <p>Figma<br><br></p>
+                        <div class="stars">
+                            <img src="images/4_rate.png" alt="Rate">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="scrollspy" id="portfolio">
+        <div class="portfolio">
+            <h2>Portfollio</h2>
+            <div class="container">
+                <div class="slider">
+                    <div class="item">
+                        <img src="images/fashion_store_homepage.png" alt="Online fashion store - Homepage">
+                    </div>
+                
+                    <div class="item">
+                        <img src="images/reebok_web.png" alt="Reebok Store - Concept">
+                    </div>
+                
+                    <div class="item">
+                        <img src="images/braun_web.png" alt="Braun Landing Page Concept">
+                    </div>
+                
+                    <a class="prev" onclick="minusSlide()">&#10094;</a>
+                    <a class="next" onclick="plusSlide()">&#10095;</a>
+                </div>
+                
+                <div class="slider-dots">
+                    <span class="slider-dots_item" onclick="currentSlide(1)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(2)"></span> 
+                    <span class="slider-dots_item" onclick="currentSlide(3)"></span> 
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="team">
+        <div class="container">
+            <div class="team-head">
+                <h2>Team</h2>
+            </div>
+            <div class="team">
+                <div class="first-teammate">
+                    <div class="first-teammate-head">
+                        <h3>Alex Gorelko</h3>
+                    </div>
+                    <div class="first-teammate-image">
+                        <img src="images/photo_2019-11-30_23-11-10.jpg" alt="">
+                    </div>
+                    <div class="first-teammate-info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quidem perspiciatis iure consectetur nemo rem incidunt corrupti dicta nam obcaecati!</p>
+                    </div>
+                </div>
+                <div class="second-teammate">
+                    <div class="second-teammate-head">
+                        <h3>Maksym Sitaylo</h3>
+                    </div>
+                    <div class="second-teammate-image">
+                        <img src="images/Screenshot_1.png" alt="">
+                    </div>
+                    <div class="second-teammate-info">
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Exercitationem, quidem perspiciatis iure consectetur nemo rem incidunt corrupti dicta nam obcaecati!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <script src="https://kit.fontawesome.com/dc7abe7982.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.0.min.js" integrity="sha384-JUMjoW8OzDJw4oFpWIB2Bu/c6768ObEthBMVSiIx4ruBIEdyNSUQAjJNFqT5pnJ6" crossorigin="anonymous"></script>
+	<script src="/jquery.navpoints.min.js"></script>
     <script src="simple.js"></script>
 </body>
