@@ -44,7 +44,7 @@ header ul {
         display: flex;
     }
     .skills_logo > div{
-        flex: 0 0 50%;
+        flex: 0 0 100%;
     }
 }
  
