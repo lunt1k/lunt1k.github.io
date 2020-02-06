@@ -55,4 +55,7 @@ header ul {
     .top-designer-description{
         justify-content: center;
     }
+    .skills_logo > div{
+        flex: 0 0 100%;
+    }
  }
