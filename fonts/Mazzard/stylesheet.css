@@ -1,0 +1,21 @@
+@font-face {
+    font-family: 'Mazzard';
+    src: url('MazzardM-Bold.ttf') format('truetype');
+
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mazzard';
+    src: url('MazzardM-Light.ttf') format('truetype');
+
+    font-weight: 300;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Mazzard';
+    src: url('MazzardM-Medium.ttf') format('truetype');
+
+    font-weight: 500;
+    font-style: normal;
+}
