@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="favicon/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="favicon/site.webmanifest">
+    <link rel="mask-icon" href="favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
     <link href="fonts/FoglihtenNo06/stylesheet.css" rel="stylesheet" type="text/css">
     <link href="fonts/Mazzard/stylesheet.css" rel="stylesheet" type="text/css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -18,13 +24,16 @@
       <div class="container">
         <header class="header">
           <div class="logo">
-            <img src="img/logo1.png" alt="logo" class="logo__image">
+            <a href="index.html">
+              <img src="img/logo.png" alt="logo" class="logo__image">
+            </a>
             <div class="logo__title">meblivsem</div>
           </div>
           <nav class="navbar">
             <ul class="navbar-container">
               <li><a href="#portfolio" class="navbar__link">Портфоліо</a></li>
               <li><a href="#company" class="navbar__link">Компанія</a></li>
+              <li><a href="gallery.html" class="navbar__link">Галерея</a></li>
               <li><a href="#contacts" class="navbar__link">Контакти</a></li>
             </ul>
           </nav>
@@ -47,6 +56,9 @@
                   <a href="#company" class="navbar__link navbar__link-mobile">Компанія</a>
                 </li>
                 <li>
+                  <a href="gallery.html" class="navbar__link navbar__link-mobile">Галерея</a>
+                </li>
+                <li>
                   <a href="#contacts" class="navbar__link navbar__link-mobile">Контакти</a>
                 </li>
               </ul>
@@ -60,20 +72,24 @@
           <div class="close-wrapper"></div>
         </div>
         <div class="main-info">
-          <img class="main-info__pattern-img" src="img/board-pattern.png" alt="board-pattern">
-          <img class="main-info__board-img" src="img/top-circle.png" alt="table">
+          <img src="img/logo.png" alt="logo" class="main-info__logo">
           <div class="main-info__title">
-            Виготовлення деревяних меблів на замовлення
+            Виготовлення садових меблів на замовлення
           </div>
           <img class="main-info__signature" src="img/signature.png" alt="signature">
         </div>
         <div class="main-categories">
-          <div class="main-categories__item">Лофт</div>
-          <div class="main-categories__item">Сходи</div>
-          <div class="main-categories__item">Двері</div>
-          <div class="main-categories__item">Ліжка</div>
-          <div class="main-categories__item">Спальні</div>
-          <div class="main-categories__item">Кухні</div>
+          <div class="main-categories-wrapper">
+            <div class="main-categories__item">Лавочки</div>
+            <div class="main-categories__item">Столи</div>
+            <div class="main-categories__item">Стільці</div>
+            <div class="main-categories__item">Барні стільці</div>
+          </div>
+          <div class="main-categories-wrapper">
+            <div class="main-categories__item">Декоративні огорожі</div>
+            <div class="main-categories__item">Садові качелі</div>
+            <div class="main-categories__item">Дитячі майданчики</div>
+          </div>
         </div>
       </div>
     </section>
@@ -118,10 +134,12 @@
               </div>
             </div>
             <div class="gallery-categories">
+              <div class="gallery__category">клен</div>
+              <div class="gallery__category">липа</div>
               <div class="gallery__category">сосна</div>
               <div class="gallery__category">дуб</div>
               <div class="gallery__category">ясен</div>
-              <div class="gallery__category">ольха</div>
+              <div class="gallery__category">вільха</div>
             </div>
           </div>
           <div class="gallery-row gallery-row--right">
@@ -177,16 +195,16 @@
             <div class="make-order__title">Робіть замовлення та запитуйте</div>
             <div class="make-order-social">
               <div class="make-order__social">Facebook</div>
-              <div class="make-order__social">Viber</div>
+              <div class="make-order__social">Telegram</div>
             </div>
           </div>
         </div>
         <div class="make-order__card image-card">
           <img class="make-order__img" src="img/make-order.png" alt="make-order">
           <div class="make-order__contact-btn">
-            <img src="img/down-left-arrow.png" alt="arrow-down-left" class="make-order__arrow">
-            <img src="img/down-left-arrow.png" alt="arrow-down-left" class="make-order__arrow">
-            <img src="img/down-left-arrow.png" alt="arrow-down-left" class="make-order__arrow">
+            <img src="img/down-left-arrow1.png" alt="arrow-down-left" class="make-order__arrow">
+            <img src="img/down-left-arrow1.png" alt="arrow-down-left" class="make-order__arrow">
+            <img src="img/down-left-arrow1.png" alt="arrow-down-left" class="make-order__arrow">
           </div>
         </div>
       </div>
@@ -229,7 +247,7 @@
 <!--          Ecomebl<span class="small-inner-letter">i</span>-->
         </div>
         <div class="cell cell-5 basic-text-small">
-          Базується в місті Житомир, спеціалізується на виготовленні дерев'яних
+          Базується в місті Житомир, спеціалізується на виготовленні садових
           меблів на замовлення
         </div>
         <div class="cell cell-6 basic-text-big">
@@ -244,13 +262,13 @@
       <div class="container">
         <div class="images-wrapper">
           <div class="container1">
-            <img class="image" src="img/0008.png" alt="Summary image 1">
+            <img class="image" src="img/11111.jpg" alt="Summary image 1">
           </div>
           <div class="container2">
-            <img class="image" src="img/0006.png" alt="Summary image 2">
+            <img class="image" src="img/11111.jpg" alt="Summary image 2">
           </div>
           <div class="container3">
-            <img class="image" src="img/summary-img3.png" alt="Summary image 3">
+            <img class="image" src="img/11111.jpg" alt="Summary image 3">
           </div>
         </div>
         <div class="text-wrapper">
@@ -259,15 +277,15 @@
           <div>Нашим вмінням та</div>
           <div>Матеріалами</div>
         </div>
-        <div class="fb-block-wrapper">
-          <div class="orange-bg-wrapper"></div>
-          <div class="circle-text-wrapper">
-            <div class="fb-text">FB</div>
-          </div>
-        </div>
+<!--        <div class="fb-block-wrapper">-->
+<!--          <div class="orange-bg-wrapper"></div>-->
+<!--          <div class="circle-text-wrapper">-->
+<!--            <div class="fb-text">FB</div>-->
+<!--          </div>-->
+<!--        </div>-->
         <footer class="summary-footer">
           <div class="footer-left-content">
-            <img src="img/logo1.png" alt="Logo">
+            <img src="img/logo.png" alt="Logo">
             <p>Працюємо<br>по всій україні</p>
           </div>
           <div class="footer-center-content">
@@ -276,7 +294,7 @@
           </div>
           <div class="footer-right-content">
             <p>Facebook</p>
-            <p>Viber</p>
+            <p>Telegram</p>
           </div>
         </footer>
       </div>
