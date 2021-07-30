@@ -29,13 +29,6 @@
             </a>
             <div class="logo__title">meblivsem</div>
           </div>
-          <nav class="navbar">
-            <ul class="navbar-container">
-              <li><a href="#portfolio" class="navbar__link">Портфоліо</a></li>
-              <li><a href="#company" class="navbar__link">Компанія</a></li>
-              <li><a href="#contacts" class="navbar__link">Контакти</a></li>
-            </ul>
-          </nav>
           <div class="contact-numbers header__contact-numbers">
             <a href="tel:+380676661329" class="contact-numbers__item">067 666 13 29</a>
           </div>
@@ -47,9 +40,6 @@
           <div class="container">
             <nav class="mobile-menu__navbar navbar">
               <ul class="navbar-container">
-                <li>
-                  <a href="#portfolio" class="navbar__link navbar__link-mobile">Портфоліо</a>
-                </li>
                 <li>
                   <a href="#company" class="navbar__link navbar__link-mobile">Компанія</a>
                 </li>
@@ -74,10 +64,10 @@
         </div>
         <div class="main-categories">
           <div class="main-categories-wrapper">
-            <a href="#bench" class="main-categories__item">Лавочки</a>
-            <a href="#table" class="main-categories__item">Столи</a>
-            <a href="#chair" class="main-categories__item">Стільці</a>
-            <a href="#bar-chair" class="main-categories__item">Барні стільці</a>
+            <div class="main-categories__item">Лавочки</div>
+            <div class="main-categories__item">Столи</div>
+            <div class="main-categories__item">Стільці</div>
+            <div class="main-categories__item">Барні стільці</div>
           </div>
           <div class="main-categories-wrapper">
             <div class="main-categories__item">Декоративні огорожі</div>
@@ -85,7 +75,12 @@
             <div class="main-categories__item">Дитячі майданчики</div>
           </div>
         </div>
-        <a href="gallery.html" class="main-section__gallery-link">Галерея <img src="img/arrow-right-thin-circle-outline.png" alt="arrow"></a>
+        <div class="main-section__gallery-links-wrapper">
+          <a href="gallery.html" class="main-section__gallery-link">Галерея
+<!--            <img src="img/arrow-right-thin-circle-outline.png" alt="arrow">-->
+          </a>
+          <a href="#contacts" class="main-section__gallery-link main-section__gallery-link--contact">Контакти</a>
+        </div>
       </div>
     </section>
     <section class="gallery">
@@ -229,52 +224,79 @@
     </section>
     <section id="contacts" class="contact-form">
       <div class="container">
-        <div class="title">Маєте запитання?</div>
-        <div class="description">
-          Залиште ваші контакти, та очікуйте на дзвінок
-        </div>
-        <form id="formEmail" novalidate="novalidate">
-          <input type="hidden" name="project_name" value="Meblivsem">
-          <input type="hidden" name="admin_email" value="hodakivskijmaks586@gmail.com">
-          <input type="hidden" name="form_subject" value="Phone">
-          <div>
-            <div class="input-wrapper">
-              <input id="nameInput" type="text" placeholder="Ім'я Прізвище" name="Ім`я" required="" class="name-input">
-            </div>
-            <div class="input-wrapper">
-              <input id="telInput" type="tel" placeholder="+(380) ___ ___ ___" class="tel-input" name="Телефон" required="">
-            </div>
+        <div>
+          <div class="title">Маєте запитання?</div>
+          <div class="description">
+            Залиште ваші контакти, та очікуйте на дзвінок
           </div>
-          <div>
-            <input type="submit" value="Залишити контакти" class="submit-input">
+          <form id="formEmail" novalidate="novalidate">
+            <input type="hidden" name="project_name" value="Meblivsem">
+            <input type="hidden" name="admin_email" value="hodakivskijmaks586@gmail.com">
+            <input type="hidden" name="form_subject" value="Phone">
+            <div>
+              <div class="input-wrapper">
+                <input id="nameInput" type="text" placeholder="Ім'я Прізвище" name="Ім`я" required="" class="name-input">
+              </div>
+              <div class="input-wrapper">
+                <input id="telInput" type="tel" placeholder="+(380) ___ ___ ___" class="tel-input" name="Телефон" required="">
+              </div>
+            </div>
+            <div>
+              <input type="submit" value="Залишити контакти" class="submit-input">
+            </div>
+          </form>
+        </div>
+        <div class="contact-form__info">
+          <div class="contact-form__info-item">
+            <div class="contact-form__info-name">Пошта: </div>
+            <a href="mailto:meblivsem@.zt@gmail.com" class="contact-form__info-link">meblivsem@.zt@gmail.com</a>
           </div>
-        </form>
-      </div>
-    </section>
-    <section id="company" class="about">
-      <div class="container">
-        <div class="cell cell-1 basic-text-big">
-          10<sup class="sup-text">+</sup><span class="mobile-break"><br></span><sub class="sub-text">років досвіду</sub>
-        </div>
-        <div class="cell cell-2 basic-text-big">
-          5<sup class="sup-text">&nbsp;</sup><span class="mobile-break"><br></span><sub class="sub-text">досвідчених столярів</sub>
-        </div>
-        <div class="cell cell-3 large-text">Cтудія</div>
-        <div class="cell cell-4 large-text">
-          Meblivsem
-        </div>
-        <div class="cell cell-5 basic-text-small">
-          Базується в місті Житомир, спеціалізується на виготовленні садових
-          меблів на замовлення
-        </div>
-        <div class="cell cell-6 basic-text-big">
-          2000<sup class="sup-text">+</sup><span class="mobile-break"><br></span><sub class="sub-text">тисячі створеної продукції</sub>
-        </div>
-        <div class="cell cell-7 basic-text-big">
-          ∞<sup class="sup-text">&nbsp;</sup><span class="mobile-break"><br></span><sub class="sub-text">любов до створення предметів</sub>
+          <div class="contact-form__info-item">
+            <div class="contact-form__info-name">Viber: </div>
+            <a href="viber://chat?number=%2B380676661329" class="contact-form__info-link">+38(067) 666 13 29</a>
+          </div>
+          <div class="contact-form__info-item">
+            <span class="contact-form__info-name">Telegram: </span>
+            <a href="tg://resolve?domain=MebliVsem" class="contact-form__info-link">+38(067) 666 13 29</a>
+          </div>
+          <div class="contact-form__info-item">
+            <div class="contact-form__info-name">Телефон: </div>
+            <a href="tel:+380676661329" class="contact-form__info-link">+38(067) 666 13 29</a>
+          </div>
         </div>
       </div>
     </section>
+<!--    <section id="company" class="about">-->
+<!--      <div class="container">-->
+<!--        <div class="cell cell-1 basic-text-big">-->
+<!--          10<sup class="sup-text">+</sup><span class="mobile-break"><br /></span-->
+<!--          ><sub class="sub-text">років досвіду</sub>-->
+<!--        </div>-->
+<!--        <div class="cell cell-2 basic-text-big">-->
+<!--          5<sup class="sup-text">&nbsp;</sup-->
+<!--          ><span class="mobile-break"><br /></span-->
+<!--          ><sub class="sub-text">досвідчених столярів</sub>-->
+<!--        </div>-->
+<!--        <div class="cell cell-3 large-text">Cтудія</div>-->
+<!--        <div class="cell cell-4 large-text">-->
+<!--          Meblivsem-->
+<!--        </div>-->
+<!--        <div class="cell cell-5 basic-text-small">-->
+<!--          Базується в місті Житомир, спеціалізується на виготовленні садових-->
+<!--          меблів на замовлення-->
+<!--        </div>-->
+<!--        <div class="cell cell-6 basic-text-big">-->
+<!--          2000<sup class="sup-text">+</sup-->
+<!--          ><span class="mobile-break"><br /></span-->
+<!--          ><sub class="sub-text">тисячі створеної продукції</sub>-->
+<!--        </div>-->
+<!--        <div class="cell cell-7 basic-text-big">-->
+<!--          ∞<sup class="sup-text">&nbsp;</sup-->
+<!--          ><span class="mobile-break"><br /></span-->
+<!--          ><sub class="sub-text">любов до створення предметів</sub>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </section>-->
     <section id="table" class="summary">
       <div class="container">
         <div class="text-wrapper">
