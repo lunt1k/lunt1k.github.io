@@ -55,8 +55,7 @@ $headers .= "CC: sombodyelse@example.com\r\n";
 $headers .= "BCC: hidden@example.com\r\n";
 
 
-mail("hodakivskijmaks586@gmail.com", adopt($form_subject), $message, $headers );
-mail("alex.ostapenko.teymax@gmail.com", adopt($form_subject), $message, $headers );
+mail("meblivsem@.zt@gmail.com", adopt($form_subject), $message, $headers );
 // mail("pi59_lmo@student.ztu.edu.ua", adopt($form_subject), $message, $headers );
 // mail("maks_88@meta.ua", adopt($form_subject), $message, $headers );
 
